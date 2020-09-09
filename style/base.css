@@ -1,0 +1,892 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/* Create by Trey 2010.12.15 */
+/* Update by Trey 2010.12.31 */
+@import "reset.css";
+/*Common css*/
+html {
+	overflow: scroll;
+	overflow-x: hidden;
+}
+body {
+	font-family: Tahoma;
+	overflow: hidden;
+}
+a {
+	text-decoration: none;
+}
+img {
+	-ms-interpolation-mode: bicubic; 
+}
+.clear {
+	clear: both;
+}
+.hidden {
+	display: none;
+}
+.visibilityHidden {
+	visibility: hidden;
+}
+div.spaceHeight25 {
+	height: 25px;
+}
+.minHeight350 {
+	min-height: 350px;
+}
+.marginBottom20 {
+	margin-bottom: 20px;
+}
+/* Common - header css */
+.header {
+	margin: 0 auto;
+	width: 981px;
+	height: 130px;
+	overflow: hidden;
+}
+.title {
+	width: 100%;
+	height: 66px;
+}
+.logo a, .logo img {
+	display: block;
+	margin-top: 9px;
+}
+.logo {
+	float: left;
+}
+.siteArea {
+	float: right;
+}
+.logo {
+	padding-left: 15px;
+}
+.siteArea {
+	padding-top: 30px;
+	color: #333;
+	text-align: right;
+}
+.siteArea a{
+	margin: 0 5px;
+	color: #666;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.siteArea p {
+	margin-top: 5px;
+	font-family: Verdana;
+	font-style: italic;
+	font-size: 10px;
+}
+.siteNav {
+	padding-left: 7px;
+	width: 974px;
+	height: 64px;
+	background: url(../images/navbgl.jpg) no-repeat;
+}
+.siteNav ul {
+	float: left;
+	padding-left: 96px;
+	width: 871px;
+	height: 100%;
+	background: url(../images/navbgrepeat.jpg) repeat-x;
+}
+.siteNav ul li {
+	position: relative;
+	float: left;
+	padding: 0 5px;
+	width: 103px;
+	height: 36px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.siteNav ul li a {
+	display: block;
+	width: 100%;
+	height: 36px;
+	color: #FFF;
+	font: bold 14px "Arial Black";
+	line-height: 36px;
+	text-decoration: none;
+}
+.navR {
+	float: left;
+	width: 7px;
+	height: 64px;
+	background: #90F url(../images/navbgr.jpg) no-repeat right center;
+}
+.activeThis {
+	background: url(../images/navActiveBg.jpg) no-repeat center top;
+}
+ul li.activeThis a {
+	color: #FFAE00;
+}
+.siteNav ul li div {
+	position: absolute;
+	top: 32px;
+	>top: 33px;					/* for ie */
+	left: 0;
+	width: 600px;
+}
+.siteNav ul li div ul {			/* 覆盖继承来的属性 */
+	float: none;
+	padding-left: 0;
+	width: 100%;
+	height: 100%;
+	background: none;
+}
+.siteNav ul li div ul li {		/* 覆盖继承来的属性 */
+	float: left;
+	padding: 0;
+	width: 110px;
+	height: 36px;
+	text-align: center;
+}
+.siteNav ul li div ul li a {	/* 覆盖继承来的属性 */
+	display: inline;
+	color: #181818;
+    font-size: 12px;
+    font-weight: normal;
+}
+.siteNav ul li.navAbout li {
+	width: 90px;
+}
+.navHover {
+	background: url(../images/navHoverBg.jpg) no-repeat center 31px;
+}
+.siteNav ul li.thisChild a {
+	color: #FF7100;
+	font-weight: bold;
+}
+.siteNav ul li div a:hover {
+	color: #181818;
+	font-weight: bold;
+}
+/* Common - main css*/
+.main {
+	margin: 0 auto;
+	width: 981px;
+}
+/* Common - footer css */
+.footer {
+	width: 100%;
+	text-align: center;
+}
+.footer ul {
+	background: #EDE9EA;
+}
+.footer ul li {
+	display: inline;
+    padding: 0 15px 0 16px;
+    height: 39px;
+	border-right: 1px solid #838182;
+    line-height: 39px;
+}
+.footer ul li a {
+	color: #838182;
+	text-decoration: none;
+}
+.footer ul li.noBorderRight {
+	border-right: none;
+}
+.footer p {
+	height: 24px;
+    background: #373737;
+	line-height: 24px;
+    color: #868686;
+}
+.footer p a {
+	padding-left: 15px;
+    color: #868686;
+	text-decoration: none;
+}
+
+/* Default Page */
+.banner {
+	position: relative;
+	margin: 0 auto;
+	width: 977px;
+	height: 324px;
+}
+.banner ul {
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.banner ul li {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bannerPrevious, .bannerNext {
+	position: absolute;
+	top: 133px;
+	left: 6px;
+	width: 19px;
+	height: 32px;
+	background: url(../images/bannerPrevious.gif) no-repeat;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.bannerNext {
+	left: 955px;
+	background: url(../images/bannerNext.gif) no-repeat;
+}
+
+.contents {
+	margin: 0 auto;
+	padding-top: 10px;
+	width: 981px;
+	height: 250px;
+	background: #FFF;
+}
+.newsTab, .solutionTab, .caseTab{
+	float: left;
+	width: 320px;
+}
+.solutionTab, .caseTab{
+	padding-left: 9px;
+}
+.newsTab dt {
+	background: url(../images/NewsTabIcon.jpg) no-repeat 210px top;
+}
+.solutionTab dt {
+	background: url(../images/SolutionTabIcon.jpg) no-repeat 210px top;
+}
+.caseTab dt {
+	background: url(../images/CaseTabIcon.jpg) no-repeat 210px top;
+}
+.contents dl dt {
+	padding: 34px 0 0 20px;
+	width: 300px;
+	height: 59px;
+	color: #FF6D00;
+	font-size: 14px;
+	font-weight: bold;
+}
+.contents  a{
+	color: #181818;
+}
+.contents  a:hover{
+	color: #FF6C02;
+}
+span.enTitle {
+	color: #282828;
+}
+.contents dl {
+	background: url(../images/IndexTabBgTop.jpg) no-repeat left 16px;
+}
+.contents dl dt span {
+	display: block;
+}
+.contents dd {
+	padding: 0 0 0 0;
+	line-height: 22px;
+}
+.contents dd ul {
+	padding: 0 0 10px 20px;
+	height: 110px;
+	background: url(../images/IndexTabBgBottom.jpg) no-repeat left bottom;
+	font-size: 12px;
+}
+/* Products & Solutions Page */
+.sideBar, .contentSection{
+	float: left;
+	margin-top: 10px;
+	font-size: 12px;
+}
+.sideBar {
+	width: 186px;
+}
+.sideBar h1 {
+	width: 100%;
+	height: 35px;
+	background: url(../images/sideBarTopBg.jpg) no-repeat left top;
+	color: #FFFFFF;
+    font-size: 14px;
+	font-weight: bold;
+	text-indent: 12px;
+	line-height: 31px;
+	>line-height: 32px;
+}
+.sideBar h2 {
+	padding-left: 12px;
+	height: auto;
+    background: url(../images/arrow02.gif) no-repeat left 12px;
+	line-height: 32px;
+}
+.sideBar h2 a {
+	color: #181818;
+	font-size: 14px;
+	font-weight: bold;
+}
+.sideBar h2.open {
+	background: url(../images/arrow01.gif) no-repeat left 12px;
+}
+.sideBar ul li {
+	padding-left: 12px;
+    height: 100%;
+    line-height: 22px;
+}
+.sideBar ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #181818;
+    font-size: 12px;
+}
+.sideBar ul li.current a {
+	font-weight: bold;
+	color: #F4750E;
+}
+.contentSection {
+	margin-bottom: 35px;
+	padding-left: 15px;
+	width: 780px;
+	line-height: 28px;
+	letter-spacing: 1px;
+}
+.contentSection p {
+	padding: 0 8px 0 0;
+	color: #4B4B4B;
+	line-height: 22px;
+}
+.contentSection li {
+	line-height: 22px;
+}
+.contentSectionNav {
+	line-height: 35px;
+}
+.contentSectionNav span {
+	padding: 0 5px;
+	color: #3B64BE;
+	font-size: 12px;
+}
+.contentSectionNav span.first {
+	padding-left: 0;
+}
+.contentSectionNav span.current {
+	color: #4B4B4B;
+	font-weight: bold;
+}
+.contentSection h3 {
+	margin: 8px 0 20px 0;
+	color: #E57B03;
+	font: 22px "微软雅黑";
+	line-height: 35px;
+}
+.contentSection h4{
+	margin-top: 15px;
+	color: #181818;
+	font-size: 14px;
+	font-weight: bold;
+}
+div.spaceHeight35 {
+	height: 35px;
+}
+.technologyList li {
+	color: #181818;
+	font-size: 12px;
+	line-height: 26px;
+}
+.contentTab {
+	margin-top: 12px;
+	height: 33px;
+}
+.contentTab span.current {
+	background-position: 0 0;
+	color: #FFF;
+}
+.contentTab span.current a {
+	color: #FFF;
+}
+.contentTab span {
+	float: left;
+	display: block;
+	padding: 0 2px;
+	width: 160px;
+	height: 33px;
+    background: url(../images/contentTabBtn.jpg) no-repeat 0 -33px;
+	color: #72787A;
+    font-weight: bold;
+    line-height: 33px;
+    text-align: center;
+    cursor: pointer;
+}
+.contentTab span a {
+	color: #72787A;
+}
+.contentsTab {
+	padding-top: 20px;
+	min-height: 400px;
+	background: url(../images/contentsTabBg.jpg) repeat-x;
+}
+.table01 {
+	width: 780px;
+	border: 1px solid #DDD;
+	border-top: 1px solid #999;
+	border-collapse: collapse;
+}
+.table01 td {
+	padding-left: 20px;
+	height: 48px;
+	border: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+	vertical-align: middle;
+}
+.table01 th {
+	height: 30px;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	background: #17375D;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 14px;
+	text-indent: 20px;
+	vertical-align: middle;
+}
+.tableT {
+	color: #4B4B4B;
+	font-weight: bold;
+}
+.trColor {
+	background: #E5F1FF;
+}
+.table01 p {
+	padding: 0;
+	text-indent: 0;
+}
+.logisticsPage {
+	height: 350px;
+}
+.service {
+	margin-bottom: 35px;
+}
+.dotRed p, .dotRed li, .logisticsPage p, .service p {
+	margin: 0;
+	padding: 0;
+	background: url(../images/dotSmall.gif) no-repeat left 10px;
+	background-position: left 8px\9;
+	_background-position: left 10px;
+	color: #181818;
+	text-indent: 10px;
+	line-height: 22px;
+}
+.cite {
+	font-style: italic;
+}
+.cite span{
+	display: block;
+	padding-right: 20px;
+	font-style: italic;
+	text-align: right;
+}
+.caseLogoList {
+	padding-top: 25px;
+	width: 100%;
+}
+.caseLogoList li {
+	float: left;
+	width: 190px;
+	height: 156px;
+	text-align: center;
+}
+.caseLogoList img{
+	display: block;
+	margin: 0 auto;
+	width: 170px;
+	height: 125px;
+	border: 1px solid #D4D4D6;
+	vertical-align:middle;
+}
+.jobDiv {
+	padding: 10px 0 0 4px;
+}
+.jobDescription {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+	margin: 0 auto;
+    width: 100%;
+	border-collapse: collapse;
+	color: #4B4B4B;
+}
+.jobDescription th{
+	padding-left: 10px;
+	border-bottom: 1px solid #fff;
+	background: #f1f1f1;
+}
+.jobDescription td {
+	padding-left: 10px;
+	border-bottom: 1px solid #fff;
+}
+.jobDescription strong {
+	color: #FF6C02;
+    font-weight: normal;
+}
+p.jobMail {
+	padding: 0;
+	text-indent: 0;
+}
+.jobMail {
+	margin: 20px 0;
+	height: 30px;
+	line-height: 30px;
+}
+.jobMail span {
+	padding-right: 15px;
+}
+.jobMail strong {
+	color: #00286A;
+	font-weight: normal;
+}
+div.jobDiv h3 {
+	margin: 0 0 15px 0;
+	padding: 0;
+	color: #FD8922;
+    font-size: 16px;
+	font-weight: bold;
+	line-height: 0;
+}
+div.jobDiv h4 {
+	margin: 0;
+	padding: 0;
+	background-position: -9999px;
+	color: #4B4B4B;
+	font-size: 12px;
+    font-weight: bolder;
+}
+.jobsList li {
+	padding-left: 10px;
+	background: url(../images/dotSmall.gif) no-repeat left 10px;
+}
+.contact {
+	min-height: 450px;
+	font-size: 12px;
+}
+.contact dt {
+	margin: 30px 0 15px;
+    padding: 0 0 15px;
+    color: #181818;
+    font-size: 14px;
+	font-weight: bold;
+}
+.contact dd a {
+	color: #4D60C6;
+}
+#ChengduMap, #ShanghaiMap, #XianMap {
+	display: block;
+	color: #4D60C6;
+    cursor: pointer;
+}
+.contentSectionTopLine {
+	margin: 0 auto;
+	width: 98%;
+	height: 25px;
+	border-bottom: 1px solid #7C7C7C;
+}
+.contentSectionTopLine span {
+	display: block;
+	color: #FF7101;
+	font-weight: bold;
+}
+.contentSectionTopLineTitle {
+	float: left;
+	font-size: 14px;
+}
+.contentSectionTopLineDate {
+	float: right;
+	font-size: 10px;
+}
+.newsList {
+	padding: 15px 8px 0 0;
+}
+.newsList dt{
+	clear: both;
+	height: 35px;
+}
+.newsList dt span{
+	float: left;
+	display: block;
+	font-size: 14px;
+}
+.newsList dt span a{
+	color: #4D60C6;
+}
+.newsList span.newsListDate {
+	float: right;
+	color: #FF6C02;
+	font-size: 12px;
+}
+.newsList dd {
+	margin-bottom: 50px;
+	line-height: 18px;
+}
+.newsDetail {
+	margin: 0 auto;
+	width: 750px;
+}
+div.newsDetail h3 {
+	margin: 30px auto 10px auto;
+	color: #181818;
+	font: 18px "微软雅黑";
+	line-height: 35px;
+	text-align: center;
+}
+.newsDetailDate {
+	display: block;
+	padding-bottom: 15px;
+	height: 30px;
+	color: #676767;
+	text-align: center;
+}
+.News_01 {
+	display: block;
+	margin: 5px auto;
+}
+
+.News_02 {
+	display: block;
+	margin: 5px auto 5px 30px;
+}
+
+.aboutBanner {
+	margin-bottom: 10px;
+}
+/* content pics */
+.NeweggEC {
+	display: block;
+	margin: 0 auto;
+	width: 700px;
+	height: 212px;
+}
+
+.NeweggEC_01
+{
+	display: block;
+	margin: 10px auto;
+	width: 500px;
+	height: 350px;
+}
+	
+.excellence_01 {
+	float: right;
+}
+.excellence_02 {
+	margin: 10px 0 0 50px;
+	width: 343px;
+	height: 85px;
+}
+.technology_01, .technology_02, .technology_03 {
+	margin-top: 12px;
+	width: 780px;
+	height: 421px;
+	-moz-box-shadow: 5px 5px 5px #CCC;			/* CSS3 增加图片效果 */
+	-webkit-box-shadow: 5px 5px 5px #CCC;		/* CSS3 增加图片效果 */
+}
+.technology_02 {
+	height: 470px;
+}
+.technology_03 {
+	width: 701px;
+	height: 396px;
+}
+.ECSolution_01 {
+ 	width: 780px;
+	height: 435px;
+}
+.ECMall_01 {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	width: 600px;
+	height: 438px;
+}
+.ECMall_02 {
+	margin-top: 15px;
+	width: 780px;
+	height: 367px;
+}
+.Logistics_01 {
+	float: left;
+	margin: 12px 12px 0 0;
+	width: 175px;
+	height: 122px;
+}
+.Logistics_02 {
+	margin: 20px 0 20px 50px;
+}
+.Logistics_03 {
+	display: block;
+	margin: 0 auto;
+	width: 600px;
+	height: 421px;
+}
+.Logistics_04 {
+	margin: 20px 0 20px 100px;
+	width: 539px;
+	height: 322px;
+}
+.Logistics_05 {
+	display: block;
+	margin: 15px auto;
+	width: 780px;
+	height: 494px;
+}
+
+.Solution_03 {
+	margin-right: 20px;
+	width: 103;
+	height: 105px;
+}
+.Logistics_06, .Logistics_07 {
+	margin: 15px 0 0 50px;
+	width: 550;
+	height: 333px;
+}
+.Logistics_08 {
+	display: block;
+	margin: 0 auto;
+	width: 780px;
+	height: 550px;
+}
+.Logistics_09 {
+	margin-left: 50px;
+}
+.Logistics_11 {
+	margin: 15px 0 0 50px;
+	width: 550px;
+	height: 310px;
+}
+.Logistics_12 {
+	margin: 15px 20px 0 30px;
+	width: 303px;
+	height: 267px;
+}
+.Logistics_13 {
+	width: 189px;
+	height: 267px;
+}
+.Logistics_14 {
+	width: 780px;
+	height: 464px;
+}
+.Logistics_15 {
+	margin: 15px 20px 0 50px;
+	width: 181px;
+	height: 215px;
+}
+.Logistics_16 {
+	width: 282px;
+	height: 215px;
+}
+.Logistics_17 {
+	width: 780px;
+	height: 464px;
+}
+
+.Logistics_18 {
+	display: block;
+	margin: 30px auto;
+	width: 500px;
+	height: 350px;
+}
+
+.Case_11 {
+	margin-bottom: 15px;
+	width: 780px;
+	height: 666px;
+}
+.Case_12 {
+	display: block;
+	margin: 10px auto;
+}
+.Case_24 {
+	margin: 0 auto;
+	display: block;
+	width: 700px;
+	height: 257px;
+}
+.Case_25 {
+	display: block;
+	float: left;
+	padding: 5px 0 0 40px;
+	width: 230px;
+	height: 136px;
+}
+.Case_26 {
+	display: block;
+	float: left;
+	margin: 5px 0 0 5px;
+	width: 230px;
+	height: 136px;
+}
+.Case_28 {
+	float: left;
+	margin-right: 10px;
+	width: 184px;
+	height: 60px;
+}
+.Case_29 {
+	float: left;
+	margin-right: 10px;
+	width: 136px;
+	height: 127px;
+}
+.Case_30 {
+	float: right;
+	margin-left: 8px;
+	width: 283px;
+	height: 178px;
+}
+.Case_31 {
+	float: left;
+	margin-right: 10px;
+}
+.Case_32 {
+	margin: 15px 0 5px 100px;
+	width: 472px;
+	height: 243px;
+}
+.Case_33 {
+	margin: 0 0 0 120px;
+}
+.Case_35 {
+	margin: 15px 25px 0 120px;
+	width: 256px;
+	height: 231px;
+}
+.Case_36 {
+	width: 256px;
+	height: 231px;
+}
+.Case_37 {
+	float: left;
+	margin-right: 10px;
+	width: 184px;
+	height: 52px;
+}
+.Case_38 {
+	margin-right: 10px;
+	float: left;
+	width: 137px;
+	height: 77px;
+}
+.Qualification {
+	margin: 20px 10px 0 60px;
+	width: 300px;
+	height: 212px;
+}
+.Logistics_001
+{
+	margin-right:10px;
+	float:left;
+	width:320px;
+	height:250px;
+}
+
+.Case_39
+{
+	width:783px;
+	height:832px;
+}

@@ -1,0 +1,58 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ul, ol, li,
+form, label, fieldset, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: normal;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+strong {
+	font-weight: bold;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.2em;
+}
+:focus {
+	outline: 0;
+}
+ul, ol {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+.content Section h4{margin-bottom:5px;}
+
+/*Add by Shawn*/
+.mt5{margin-top:5px;}
+.mb10{margin-bottom:10px;} .mt10{margin-top:10px;} .ml10{margin-left:10px;} .mr10{margin-right:10px;}.mb20{margin-bottom:20px;} .mt20{margin-top:20px;} .ml20{margin-left:20px;} .mr20{margin-right:20px;}.tl{text-align:left;}.tr{text-align:right;}.tc{text-align:center;}.fl{display:inline;float:left;}.fr{display:inline;float:right;}.imageWrap{width:675px;overflow:hidden;height:auto;text-align:center;margin:20px 10px auto auto;}.imageWrap .img_s1{display:inline-block;width:288px;height:480px;margin:0 10px;}.imageWrap .img_s2{display:inline-block;width:320px;height:480px;margin:0 10px;}.imageWrap .img_b{display:inline-block;width:634px;margin:0 10px;height:auto;}.imageWrap p span{float:left;display:inline-block;width:333px;margin-top:-5px;}.slider{position:relative;}.slider .moverwrap{height:480px; margin:0 auto; overflow:hidden; position:relative; width:675px;}.slider .moverwrap ul{left:0;position:absolute;top:0;width:20000px;}#aPad .moverwrap{height:400px;} #iPad .moverwrap{height:520px;} #android .moverwrap{height:520px;}#wp .moverwrap{height:500px;}.prolist li{float:left;padding:0 10px;width:320px;}#aPad .prolist li,#iPad .prolist li,#wp .prolist li{float:left;padding:0;width:675px;text-align:center;}.prolist li .double p span{float:left;display:inline-block;width:333px;}.prolist li img{display:block;height:auto;margin:0 10px;width:310px;}.prolist li .img_s{display:inline-block;width:250px;}.prolist li .img_m1{display:inline-block;width:450px;}.prolist li .img_b{display:inline-block;width:634px;}.prolist li .img_b1{display:inline-block;width:1000px;}.aleft{background:url("../images/bannerPrevious.gif") no-repeat transparent;cursor:pointer;height:32px;left:10px;position:absolute;text-indent:-9999px;top:50%;margin-top:-16px;width:19px;}.agrayleft{display:block;filter:alpha(opacity=40);-moz-opacity:0.4;-khtml-opacity:0.4;opacity: 0.4;}.aright{background:url("../images/bannerNext.gif") no-repeat transparent;cursor:pointer;height:32px;right:10px;position:absolute;text-indent:-9999px;top:50%;margin-top:-16px;width:19px;}.agrayright{display:block;filter:alpha(opacity=40);-moz-opacity:0.4;-khtml-opacity:0.4;opacity: 0.4;}
+
+.subTitle{color: #3B64BE;font-size:14px;}
+.contentSection .subTitle p,.contentSection .subTitle li{color: #3B64BE;font-size:12px;font-weight:bold;font-style:italic;font-family:Î¢ÈíÑÅºÚ;}   
+.dotBlue p, .dotBlue li{margin: 0;padding: 0;background: url(../images/dotBlue.jpg) no-repeat left 10px;background-position: left 8px\9;_background-position: left 10px;text-indent: 10px;line-height: 22px;}
