@@ -16,7 +16,7 @@ a {
 	text-decoration: none;
 }
 img {
-	-ms-interpolation-mode: bicubic; 
+	-ms-interpolation-mode: bicubic;
 }
 .clear {
 	clear: both;
@@ -68,7 +68,7 @@ div.spaceHeight25 {
 .siteArea a{
 	margin: 0 5px;
 	color: #666;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -145,7 +145,7 @@ ul li.activeThis a {
 .siteNav ul li div ul li a {	/* 覆盖继承来的属性 */
 	display: inline;
 	color: #181818;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
 }
 .siteNav ul li.navAbout li {
@@ -262,7 +262,7 @@ ul li.activeThis a {
 	width: 300px;
 	height: 59px;
 	color: #FF6D00;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: bold;
 }
 .contents  a{
@@ -288,13 +288,13 @@ span.enTitle {
 	padding: 0 0 10px 20px;
 	height: 110px;
 	background: url(../images/IndexTabBgBottom.jpg) no-repeat left bottom;
-	font-size: 12px;
+	font-size: 14px;
 }
 /* Products & Solutions Page */
 .sideBar, .contentSection{
 	float: left;
 	margin-top: 10px;
-	font-size: 12px;
+	font-size: 14px;
 }
 .sideBar {
 	width: 186px;
@@ -304,7 +304,7 @@ span.enTitle {
 	height: 35px;
 	background: url(../images/sideBarTopBg.jpg) no-repeat left top;
 	color: #FFFFFF;
-    font-size: 14px;
+    font-size: 15px;
 	font-weight: bold;
 	text-indent: 12px;
 	line-height: 31px;
@@ -318,7 +318,7 @@ span.enTitle {
 }
 .sideBar h2 a {
 	color: #181818;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: bold;
 }
 .sideBar h2.open {
@@ -334,7 +334,7 @@ span.enTitle {
 	width: 100%;
 	height: 100%;
 	color: #181818;
-    font-size: 12px;
+    font-size: 14px;
 }
 .sideBar ul li.current a {
 	font-weight: bold;
@@ -361,7 +361,7 @@ span.enTitle {
 .contentSectionNav span {
 	padding: 0 5px;
 	color: #3B64BE;
-	font-size: 12px;
+	font-size: 14px;
 }
 .contentSectionNav span.first {
 	padding-left: 0;
@@ -379,7 +379,7 @@ span.enTitle {
 .contentSection h4{
 	margin-top: 15px;
 	color: #181818;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: bold;
 }
 div.spaceHeight35 {
@@ -387,7 +387,7 @@ div.spaceHeight35 {
 }
 .technologyList li {
 	color: #181818;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 26px;
 }
 .contentTab {
@@ -442,7 +442,7 @@ div.spaceHeight35 {
 	background: #17375D;
 	color: #FFF;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 15px;
 	text-indent: 20px;
 	vertical-align: middle;
 }
@@ -553,7 +553,7 @@ div.jobDiv h4 {
 	padding: 0;
 	background-position: -9999px;
 	color: #4B4B4B;
-	font-size: 12px;
+	font-size: 14px;
     font-weight: bolder;
 }
 .jobsList li {
@@ -562,13 +562,13 @@ div.jobDiv h4 {
 }
 .contact {
 	min-height: 450px;
-	font-size: 12px;
+	font-size: 14px;
 }
 .contact dt {
 	margin: 30px 0 15px;
     padding: 0 0 15px;
     color: #181818;
-    font-size: 14px;
+    font-size: 15px;
 	font-weight: bold;
 }
 .contact dd a {
@@ -592,7 +592,7 @@ div.jobDiv h4 {
 }
 .contentSectionTopLineTitle {
 	float: left;
-	font-size: 14px;
+	font-size: 15px;
 }
 .contentSectionTopLineDate {
 	float: right;
@@ -608,7 +608,7 @@ div.jobDiv h4 {
 .newsList dt span{
 	float: left;
 	display: block;
-	font-size: 14px;
+	font-size: 15px;
 }
 .newsList dt span a{
 	color: #4D60C6;
@@ -616,7 +616,7 @@ div.jobDiv h4 {
 .newsList span.newsListDate {
 	float: right;
 	color: #FF6C02;
-	font-size: 12px;
+	font-size: 14px;
 }
 .newsList dd {
 	margin-bottom: 50px;
@@ -668,7 +668,7 @@ div.newsDetail h3 {
 	width: 500px;
 	height: 350px;
 }
-	
+
 .excellence_01 {
 	float: right;
 }
